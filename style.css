@@ -34,12 +34,12 @@ body {
 
   /*background: image repeat position/size*/
   background: var(--background) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
   color: var(--text-color);
   font-family: "Inter", sans-serif;
-  height: 100vh;
 }
 
 #container {
@@ -82,11 +82,17 @@ body * {
   border-radius: 50%;
   position: absolute;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
+  animation: slide-back 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--icons-hover);
 }
 
 .light #switch button {
-  right: 0;
+  animation: slide-in 0.2s forwards;
 }
 
 #switch span {
@@ -163,5 +169,23 @@ footer {
 
   .light {
     --background: url(/assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }

@@ -6,8 +6,8 @@
 
 :root {
   --text-color: white;
-  --background: url(assets/bg-mobile.jpg);
-  --switch-img: url(assets/MoonStars.svg);
+  --background: url(./assets/bg-mobile.jpg);
+  --switch-img: url(./assets/MoonStars.svg);
   --border: rgba(255, 255, 255, 0.5);
   --bg-buttons: rgba(255, 255, 255, 0.1);
   --bg-hover: rgba(0, 0, 0, 0.05);
@@ -16,8 +16,8 @@
 
 .light {
   --text-color: black;
-  --background: url(assets/bg-mobile-light.jpg);
-  --switch-img: url(assets/Sun.svg);
+  --background: url(./assets/bg-mobile-light.jpg);
+  --switch-img: url(./assets/Sun.svg);
   --border: rgba(0, 0, 0, 0.5);
   --bg-buttons: rgba(0, 0, 0, 0.05);
   --bg-hover: rgba(0, 0, 0, 0.02);
@@ -164,11 +164,11 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --background: url(/assets/bg-desktop.jpg);
+    --background: url(./assets/bg-desktop.jpg);
   }
 
   .light {
-    --background: url(/assets/bg-desktop-light.jpg);
+    --background: url(./assets/bg-desktop-light.jpg);
   }
 }
 
